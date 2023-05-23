@@ -92,6 +92,7 @@ class FSM:
         """
         state_names = {"Sleep": self.State.SLEEP, "Eat": self.State.EAT, "Code": self.State.CODE, "Learn": self.State.LEARN, "Angry": self.State.ANGRY}
         state_names = {v: k for k, v in state_names.items()}
+
         for state, transitions in self.transitions.items():
             for event, next_state in transitions.items():
                 if isinstance(event, str):
@@ -102,6 +103,6 @@ class FSM:
 
 if __name__ == "__main__":
     fsm = FSM()
-    fsm.save_fsm()
-    # for i in range(24):
-    #     print(fsm.next(i))
+
+    for i in range(24):
+        print(fsm.next(i))
