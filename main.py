@@ -105,4 +105,5 @@ if __name__ == "__main__":
     fsm = FSM()
 
     for i in range(24):
-        print(fsm.next(i))
+        result, random_event = fsm.next(i)
+        print(result, random_event if random_event else "")
