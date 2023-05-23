@@ -2,7 +2,7 @@
 
 ## Description
 
-This is simple FSM(Finite State Machine) implementation in Python that represents my usual day.
+This is simple **FSM**(Finite State Machine) implementation in Python that represents my usual day.
 
 ## How to use
 You just have to run `main.py` file and follow the instructions.
@@ -39,7 +39,7 @@ I'm Angry! Air Alarm!
 ```
 
 ## Automat diagram
-![Automat diagram](.\graphviz.png)
+![Automat diagram](graphviz.png)
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
